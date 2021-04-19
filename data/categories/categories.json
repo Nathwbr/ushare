@@ -1,0 +1,32 @@
+[
+  {
+    src: require("../../../data/categories/logo/chaud.png"),
+    label: "Chaud",
+    value: 1,
+  },
+  {
+    src: require("../../../data/categories/logo/froid.png"),
+    label: "Froid",
+    value: 2,
+  },
+  {
+    src: require("../../../data/categories/logo/vegetarien.png"),
+    label: "Végétarien",
+    value: 3,
+  },
+  {
+    src: require("../../../data/categories/logo/viande.png"),
+    label: "Viande",
+    value: 4,
+  },
+  {
+    src: require("../../../data/categories/logo/poulet.png"),
+    label: "Poulet",
+    value: 5,
+  },
+  {
+    src: require("../../../data/categories/logo/poisson.png"),
+    label: "Poisson",
+    value: 6,
+  }
+]

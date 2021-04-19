@@ -1,0 +1,2 @@
+Refaire tab navigation
+Dans le bottom tab size of "add" +10
