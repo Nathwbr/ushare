@@ -15,3 +15,5 @@ npm i yup
 npm i react-native-swiper --save
 npm i formik@2.1.4
 expo install react-native-gesture-handler
+expo install expo-image-picker
+expo install expo-permissions
