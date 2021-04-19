@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 import ListingEditScreen from "./app/screens/logged/ListingEditScreen";
 
 export default function App() {
-  return <ListingEditScreen />;
+  return (<ListingEditScreen   />);
 }
 
 const styles = StyleSheet.create({});
