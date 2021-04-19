@@ -10,13 +10,13 @@ const listings = [
     id: 1,
     title: "Lasagnes",
     price: 100,
-    src: require("../images/lasagnes.jpg"),
+    image: require("../../../data/listings/images/lasagnes.jpg"),
   },
   {
     id: 2,
     title: "Pâtes",
     price: 1000,
-    src: require("../images/pasta.jpg"),
+    image: require("../../../data/listings/images/pasta.jpg"),
   },
 ];
 
