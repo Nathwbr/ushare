@@ -52,7 +52,7 @@ export const CameraScreen = () => {
   }
 
   ////////////////////////////
-  //Permission Bilbiothèque
+  //Permission Bilbiothèque //todo
   ///////////////////////////
   // useEffect(() => {
   //   (async () => {
