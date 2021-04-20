@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
+import Camera from "./Camera";
 
 import colors from "../config/colors";
 
@@ -17,30 +18,44 @@ function ImageInput({ imageUri, onChangeImage }) {
   }, []);
 
   const requestPermission = async () => {
-    const { granted } = await ImagePicker.requestCameraRollPermissionsAsync();
-    if (!granted) alert("You need to enable permission to access the library.");
+    const { granted } = await ImagePicker.requestMediaLibraryPermissionsAsync();
+    if (!granted)
+      alert(
+        "Vous devez autoriser la permission pour accéder à la bibliothèque."
+      );
   };
 
   const handlePress = () => {
     if (!imageUri) selectImage();
     else
-      Alert.alert("Delete", "Are you sure you want to delete this image?", [
-        { text: "Yes", onPress: () => onChangeImage(null) },
-        { text: "No" },
-      ]);
+      Alert.alert(
+        "Supprimer",
+        "Êtes-vous sûr de vouloir supprimer cette image ?",
+        [{ text: "Oui", onPress: () => onChangeImage(null) }, { text: "Non" }]
+      );
   };
 
   const selectImage = async () => {
     try {
-      const result = await ImagePicker.launchImageLibraryAsync({
+      const photo = await ImagePicker.launchImageLibraryAsync({
         mediaTypes: ImagePicker.MediaTypeOptions.Images,
         quality: 0.5,
       });
-      if (!result.cancelled) onChangeImage(result.uri);
+      if (!photo.cancelled) onChangeImage(photo.uri);
     } catch (error) {
-      console.log("Error reading an image", error);
+      console.log("Erreur de lecture de l'image", error);
     }
   };
+
+  // const selectImage = async () => {
+  //   try {
+  //     const result = await CAMERARESULTATICIURI
+  //     });
+  //     if (!result.cancelled) onChangeImage(result.uri);
+  //   } catch (error) {
+  //     console.log("Erreur de lecture de l'image", error);
+  //   }
+  // };
 
   return (
     <TouchableWithoutFeedback onPress={handlePress}>
