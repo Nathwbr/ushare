@@ -38,6 +38,7 @@ function ImageInput({ imageUri, onChangeImage }) {
   const selectImage = async () => {
     try {
       const photo = await ImagePicker.launchImageLibraryAsync({
+        // ICI INSERER CAMERASCREEN //todo
         mediaTypes: ImagePicker.MediaTypeOptions.Images,
         quality: 0.5,
       });
@@ -46,16 +47,6 @@ function ImageInput({ imageUri, onChangeImage }) {
       console.log("Erreur de lecture de l'image", error);
     }
   };
-
-  // const selectImage = async () => {
-  //   try {
-  //     const result = await CAMERARESULTATICIURI
-  //     });
-  //     if (!result.cancelled) onChangeImage(result.uri);
-  //   } catch (error) {
-  //     console.log("Erreur de lecture de l'image", error);
-  //   }
-  // };
 
   return (
     <TouchableWithoutFeedback onPress={handlePress}>
