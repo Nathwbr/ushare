@@ -1,14 +1,13 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
 
-import ListingEditScreen from "./app/screens/logged/ListingEditScreen";
-import ListingDetailsScreen from "./app/screens/logged/ListingDetailsScreen";
-import ListingsScreen from "./app/screens/logged/ListingsScreen";
-import RegisterScreen from "./app/screens/notLogged/RegisterScreen";
+import { NavigationContainer } from "@react-navigation/native";
+import AppNavigator from "./app/navigation/AppNavigator";
+import navigationTheme from "./app/navigation/navigationTheme";
 
 export default function App() {
-  return <RegisterScreen />;
+  return (
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator />
+    </NavigationContainer>
+  );
 }
-
-const styles = StyleSheet.create({});

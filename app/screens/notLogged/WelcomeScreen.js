@@ -7,7 +7,7 @@ import colors from "../../config/colors";
 import Button from "../../components/Button";
 import Screen from "../../components/Screen";
 
-function WelcomeScreen(props) {
+function WelcomeScreen({ navigation }) {
   return (
     <Screen>
       <View style={styles.header}>
@@ -48,13 +48,19 @@ function WelcomeScreen(props) {
 
       <View style={styles.buttonsContainer}>
         <View style={styles.buttons}>
-          <Button title={"Se connecter"} />
+          <Button
+            title={"Se connecter"}
+            onPress={() => navigation.navigate("LoginScreen")}
+          />
         </View>
       </View>
 
       <View style={styles.buttonsContainerBot}>
         <View style={styles.buttons}>
-          <Button title={"S'inscrire"} />
+          <Button
+            title={"S'inscrire"}
+            onPress={() => navigation.navigate("RegisterScreen")}
+          />
         </View>
       </View>
     </Screen>

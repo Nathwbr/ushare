@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/navigation/AuthNavigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/TextInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TextInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/notLogged/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/notLogged/LoginScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/notLogged/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/notLogged/RegisterScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/AuthNavigator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/notLogged/WelcomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/notLogged/WelcomeScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,21 +52,23 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nathan\ushare\app" />
       <recent name="C:\Users\Nathan\ushare\app\screens\logged" />
       <recent name="C:\Users\Nathan\ushare\app\components" />
-      <recent name="C:\Users\Nathan\ushare\app" />
       <recent name="C:\Users\Nathan\ushare\data\listings\images" />
       <recent name="C:\Users\Nathan\ushare\data\listings" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,7 +94,8 @@
       <workItem from="1618838810387" duration="17283000" />
       <workItem from="1619007722382" duration="6930000" />
       <workItem from="1619081425287" duration="6348000" />
-      <workItem from="1619091598093" duration="7275000" />
+      <workItem from="1619091598093" duration="7926000" />
+      <workItem from="1619101618643" duration="1844000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -245,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619094789651</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Creating Navigation and improving registerScreen">
+      <created>1619100980086</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1619100980086</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +296,8 @@
     <MESSAGE value="Improving ListEditScreen, FormImagePicker and ImageInput" />
     <MESSAGE value="Improving ListEditScreen and CameraScreen" />
     <MESSAGE value="Correcting typing error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correcting typing error" />
+    <MESSAGE value="Creating Navigation and improving registerScreen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating Navigation and improving registerScreen" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
