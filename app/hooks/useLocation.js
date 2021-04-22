@@ -9,7 +9,7 @@ const useLocation = () => {
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== "granted") {
-        setErrorMsg("Veuillez autorisez l'accez à la localisation");
+        setErrorMsg("Veuillez autorisez l'accès à la localisation");
         return;
       }
 

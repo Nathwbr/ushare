@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/hooks/useLocation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/logged/CameraScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/CameraScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/logged/ListingEditScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/ListingEditScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/useLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/hooks/useLocation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +76,7 @@
       <workItem from="1618838810387" duration="17283000" />
       <workItem from="1619007722382" duration="6930000" />
       <workItem from="1619081425287" duration="6348000" />
-      <workItem from="1619091598093" duration="3115000" />
+      <workItem from="1619091598093" duration="3171000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -215,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619081875735</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Improving ListEditScreen and CameraScreen">
+      <created>1619094749636</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1619094749636</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +261,8 @@
     <MESSAGE value="Creating a CameraScreen that return an object with a picture and its informations" />
     <MESSAGE value="Implemanting CameraScreen" />
     <MESSAGE value="Improving ListEditScreen, FormImagePicker and ImageInput" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improving ListEditScreen, FormImagePicker and ImageInput" />
+    <MESSAGE value="Improving ListEditScreen and CameraScreen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improving ListEditScreen and CameraScreen" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
