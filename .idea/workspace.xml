@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/forms/FormImagePicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useLocation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Camera.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/CameraScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/CameraScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ImageInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ImageInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/forms/ErrorMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/forms/ErrorMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/CameraScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/CameraScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/logged/ListingEditScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/ListingEditScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,7 +79,8 @@
       <workItem from="1618838718583" duration="87000" />
       <workItem from="1618838810387" duration="17283000" />
       <workItem from="1619007722382" duration="6930000" />
-      <workItem from="1619081425287" duration="420000" />
+      <workItem from="1619081425287" duration="6348000" />
+      <workItem from="1619091598093" duration="3115000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -202,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618878944244</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Improving ListEditScreen, FormImagePicker and ImageInput">
+      <created>1619081875735</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1619081875735</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +257,8 @@
     <MESSAGE value="Image Input" />
     <MESSAGE value="Creating a CameraScreen that return an object with a picture and its informations" />
     <MESSAGE value="Implemanting CameraScreen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemanting CameraScreen" />
+    <MESSAGE value="Improving ListEditScreen, FormImagePicker and ImageInput" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improving ListEditScreen, FormImagePicker and ImageInput" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

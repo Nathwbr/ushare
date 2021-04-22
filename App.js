@@ -8,7 +8,7 @@ import ListingDetailsScreen from "./app/screens/logged/ListingDetailsScreen";
 import ListingsScreen from "./app/screens/logged/ListingsScreen";
 
 export default function App() {
-  return <ListingEditScreen />;
+  return <CameraScreen />;
 }
 
 const styles = StyleSheet.create({});

@@ -1,18 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-  Platform,
-} from "react-native";
+import { View, TouchableOpacity, Platform } from "react-native";
 import { Camera } from "expo-camera";
 import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
 
 export const CameraScreen = () => {
   const cameraRef = useRef();
-  const [hasPermission, setHasPermission] = useState(null);
   const [type, setType] = useState(Camera.Constants.Type.back);
 
   const snap = async () => {
@@ -33,47 +26,33 @@ export const CameraScreen = () => {
     }
   };
 
-  ////////////////////////////
-  //Permission Caméra
-  ///////////////////////////
-
   useEffect(() => {
     (async () => {
-      const { status } = await Camera.requestPermissionsAsync();
-      setHasPermission(status === "granted");
+      if (Platform.OS !== "web") {
+        console.log("Ask Permission");
+        const libraryPermission = await ImagePicker.requestMediaLibraryPermissionsAsync();
+        const cameraPermission = await ImagePicker.requestCameraPermissionsAsync();
+
+        console.log("libraryPermission", libraryPermission);
+        console.log("cameraPermission", cameraPermission);
+        if (libraryPermission.status !== "granted") {
+          alert(
+            "Désolé, nous avons besoin des autorisations d'accès au stockage pour que cela fonctionne !"
+          );
+        }
+        if (cameraPermission.status !== "granted") {
+          alert(
+            "Désolé, nous avons besoin des autorisations de la caméra pour que cela fonctionne !"
+          );
+        }
+      }
     })();
   }, []);
-
-  if (hasPermission === null) {
-    return <View />;
-  }
-  if (hasPermission === false) {
-    return <Text>Pas d'accès à la caméra</Text>;
-  }
-
-  ////////////////////////////
-  //Permission Bilbiothèque //todo
-  ///////////////////////////
-  // useEffect(() => {
-  //   (async () => {
-  //     if (Platform.OS !== "web") {
-  //       const {
-  //         status,
-  //       } = await ImagePicker.requestMediaLibraryPermissionsAsync();
-  //       if (status !== "granted") {
-  //         alert("Sorry, we need camera roll permissions to make this work!");
-  //       }
-  //     }
-  //   })();
-  // }, []);
-
-  ////////////////////////
 
   return (
     <View style={{ width: "100%", height: 500 }}>
       <Camera
         style={{ flex: 1 }}
-        //type={this.state.cameraType}
         type={type}
         ref={(camera) => (cameraRef.current = camera)}
       >
@@ -135,9 +114,5 @@ export const CameraScreen = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {},
-});
 
 export default CameraScreen;

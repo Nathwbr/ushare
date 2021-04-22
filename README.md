@@ -18,3 +18,4 @@ expo install react-native-gesture-handler
 expo install expo-image-picker
 expo install expo-location
 expo install expo-camera
+expo install expo-location
