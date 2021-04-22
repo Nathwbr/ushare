@@ -3,7 +3,6 @@ import { View, TextInput, StyleSheet, Platform } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import defaultStyles from "../config/styles";
-import colors from "../config/colors";
 
 function AppTextInput({ icon, width = "100%", ...otherProps }) {
   return (
@@ -35,6 +34,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginRight: 10,
+    marginTop: 3,
   },
 });
 

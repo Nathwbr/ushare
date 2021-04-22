@@ -14,8 +14,11 @@ Installed packages :
 npm i yup
 npm i react-native-swiper --save
 npm i formik@2.1.4
-expo install react-native-gesture-handler
 expo install expo-image-picker
 expo install expo-location
 expo install expo-camera
 expo install expo-location
+npm install @react-navigation/native@5
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+npm install @react-navigation/stack
+npm install @react-navigation/bottom-tabs

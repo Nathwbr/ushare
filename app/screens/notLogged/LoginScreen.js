@@ -12,12 +12,7 @@ const validationSchema = Yup.object({
       /^[a-z0-9](\.?[a-z0-9]){1,}@isep\.fr$/,
       "Votre email doit être de la forme prenom.nom@isep.fr"
     ),
-  password: Yup.string()
-    .required("Saisissez votre mot de passe")
-    .matches(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,24}$/,
-      "Votre mot de passe doit contenir entre 8 et 24 caractères, au moins une majuscule, une minuscule, un chiffre et un caractère spécial."
-    ),
+  password: Yup.string().required("Saisissez votre mot de passe"),
 });
 
 function LoginScreen(props) {
