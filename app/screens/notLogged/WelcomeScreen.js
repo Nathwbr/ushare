@@ -10,10 +10,6 @@ import Screen from "../../components/Screen";
 function WelcomeScreen({ navigation }) {
   return (
     <Screen>
-      <View style={styles.header}>
-        <Text style={styles.texteHeader}>Rejoins nous !</Text>
-      </View>
-
       <View style={styles.swiper}>
         <Swiper
           showsButtons={true}
@@ -50,7 +46,7 @@ function WelcomeScreen({ navigation }) {
         <View style={styles.buttons}>
           <Button
             title={"Se connecter"}
-            onPress={() => navigation.navigate("LoginScreen")}
+            onPress={() => navigation.navigate("Se connecter")}
           />
         </View>
       </View>
@@ -59,7 +55,7 @@ function WelcomeScreen({ navigation }) {
         <View style={styles.buttons}>
           <Button
             title={"S'inscrire"}
-            onPress={() => navigation.navigate("RegisterScreen")}
+            onPress={() => navigation.navigate("S'inscrire")}
           />
         </View>
       </View>
@@ -87,13 +83,6 @@ const styles = StyleSheet.create({
     color: colors.primary,
     fontSize: 30,
     fontWeight: "bold",
-  },
-  header: {
-    flex: 0.08,
-    height: 50,
-    backgroundColor: colors.primary,
-    justifyContent: "center",
-    alignItems: "center",
   },
   imageIntro: {
     width: "75%",
@@ -126,11 +115,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: colors.white,
     marginTop: "10%",
-  },
-  texteHeader: {
-    color: colors.white,
-    fontWeight: "bold",
-    fontSize: 20,
   },
   text: {
     color: colors.dark,

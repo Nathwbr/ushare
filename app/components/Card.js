@@ -1,25 +1,35 @@
 import React from "react";
-import { View, StyleSheet, Image } from "react-native";
+import {
+  View,
+  StyleSheet,
+  Image,
+  TouchableWithoutFeedback,
+} from "react-native";
 
 import Text from "./Text";
 import colors from "../config/colors";
 
-function Card({ title, subTitle, image }) {
+function Card({ title, subTitle, image, onPress }) {
   return (
-    <View style={styles.card}>
-      <Image style={styles.image} source={image} />
-      <View style={styles.detailsContainer}>
-        <Text style={styles.title} numberOfLines={1}>
-          {title}
-        </Text>
-        <View style={styles.price}>
-          <Text style={styles.subTitle} numberOfLines={2}>
-            {subTitle}
+    <TouchableWithoutFeedback onPress={onPress}>
+      <View style={styles.card}>
+        <Image style={styles.image} source={image} />
+        <View style={styles.detailsContainer}>
+          <Text style={styles.title} numberOfLines={1}>
+            {title}
           </Text>
-          <Image source={require("../assets/ucoin.png")} style={styles.ucoin} />
+          <View style={styles.price}>
+            <Text style={styles.subTitle} numberOfLines={2}>
+              {subTitle}
+            </Text>
+            <Image
+              source={require("../assets/ucoin.png")}
+              style={styles.ucoin}
+            />
+          </View>
         </View>
       </View>
-    </View>
+    </TouchableWithoutFeedback>
   );
 }
 

@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/screens/logged/BalanceScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/screens/logged/SearchScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/navigation/AuthNavigator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/AccountNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/AccountNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/AppNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/AuthNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/AuthNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/FeedNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/FeedNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/AccountScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/AccountScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/ListingDetailsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/ListingDetailsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/ListingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/ListingsScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/notLogged/WelcomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/notLogged/WelcomeScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +57,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Nathan\AppData\Roaming\npm\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -95,7 +104,7 @@
       <workItem from="1619007722382" duration="6930000" />
       <workItem from="1619081425287" duration="6348000" />
       <workItem from="1619091598093" duration="7926000" />
-      <workItem from="1619101618643" duration="1844000" />
+      <workItem from="1619101618643" duration="11826000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -251,7 +260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619100980086</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Navigation">
+      <created>1619103572767</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1619103572767</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Navigation">
+      <created>1619103606956</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1619103606956</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +320,8 @@
     <MESSAGE value="Improving ListEditScreen and CameraScreen" />
     <MESSAGE value="Correcting typing error" />
     <MESSAGE value="Creating Navigation and improving registerScreen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating Navigation and improving registerScreen" />
+    <MESSAGE value="Navigation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navigation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

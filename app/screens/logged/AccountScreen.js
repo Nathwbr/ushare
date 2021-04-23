@@ -15,13 +15,6 @@ const menuItems = [
       backgroundColor: colors.primary,
     },
   },
-  {
-    title: "Mes Messages",
-    icon: {
-      name: "email",
-      backgroundColor: colors.primary,
-    },
-  },
 ];
 
 function AccountScreen(props) {

@@ -5,17 +5,15 @@ import colors from "../../config/colors";
 import ListItem from "../../components/lists/ListItem";
 import Text from "../../components/Text";
 
-function ListingDetailsScreen(props) {
+function ListingDetailsScreen({ route }) {
+  const listing = route.params;
   return (
     <View>
-      <Image
-        style={styles.image}
-        source={require("../../../data/listings/images/lasagnes.jpg")}
-      />
+      <Image style={styles.image} source={listing.image} />
       <View style={styles.detailsContainer}>
-        <Text style={styles.title}>Lasagnes</Text>
+        <Text style={styles.title}>{listing.title}</Text>
         <View style={styles.price}>
-          <Text style={styles.priceText}>100</Text>
+          <Text style={styles.priceText}>{listing.price}</Text>
           <Image
             source={require("../../assets/ucoin.png")}
             style={styles.ucoin}
