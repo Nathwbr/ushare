@@ -4,6 +4,9 @@ import AccountScreen from "../screens/logged/AccountScreen";
 import MessagesScreen from "../screens/logged/MessagesScreen";
 import colors from "../config/colors";
 
+import routes from "./routes";
+import MyListingsScreen from "../screens/logged/MyListingsScreen";
+
 const Stack = createStackNavigator();
 
 const AccountNavigator = () => (
@@ -17,19 +20,21 @@ const AccountNavigator = () => (
     }}
   >
     <Stack.Screen
-      name="Account"
+      name={routes.MYACCOUNT}
       component={AccountScreen}
       options={{
         headerTintColor: "white",
+        headerTitleAlign: "center",
         headerStyle: { backgroundColor: colors.primary },
       }}
     />
     <Stack.Screen
-      name="Messages"
-      component={MessagesScreen}
+      name={routes.MYLISTINGS}
+      component={MyListingsScreen}
       options={{
         headerTintColor: "white",
         headerStyle: { backgroundColor: colors.primary },
+        headerTitleAlign: "center",
       }}
     />
   </Stack.Navigator>

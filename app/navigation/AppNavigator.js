@@ -28,7 +28,7 @@ const AppNavigator = () => (
     }}
   >
     <Tab.Screen
-      name="Feed"
+      name="Accueil"
       component={FeedNavigator}
       options={{
         tabBarIcon: ({ color, size }) => (
@@ -38,7 +38,7 @@ const AppNavigator = () => (
     />
 
     <Tab.Screen
-      name="Search"
+      name="Rechercher"
       component={SearchScreen}
       options={{
         tabBarIcon: ({ color, size }) => (
@@ -50,11 +50,22 @@ const AppNavigator = () => (
     <Tab.Screen
       name="Poster"
       component={ListingEditScreen}
-      options={{
-        tabBarIcon: ({ color, size }) => (
-          <Ionicons name="add-circle-outline" color={color} size={size} />
+      options={({ navigation }) => ({
+        tabBarButton: ({ color, size }) => (
+          <NewListingButton
+            onPress={() => navigation.navigate(routes.LISTING_EDIT)}
+            color={colors.white}
+            size={45}
+          />
         ),
-      }}
+        tabBarIcon: ({ color, size }) => (
+          <MaterialCommunityIcons
+            name="plus-circle"
+            color={color}
+            size={size}
+          />
+        ),
+      })}
     />
 
     <Tab.Screen
@@ -68,7 +79,7 @@ const AppNavigator = () => (
     />
 
     <Tab.Screen
-      name="Account"
+      name="Compte"
       component={AccountNavigator}
       options={{
         tabBarIcon: ({ color, size }) => (

@@ -1,20 +1,16 @@
 import React from "react";
-import { View, StyleSheet, TouchableOpacity } from "react-native";
-import MaterialCommunityIcons from "@expo/vector-icons";
+import { View, StyleSheet, TouchableWithoutFeedback } from "react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import colors from "../config/colors";
 
-function NewListingButton({ onPress }) {
+function NewListingButton({ onPress, color, size }) {
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableWithoutFeedback onPress={onPress}>
       <View style={styles.container}>
-        <MaterialCommunityIcons
-          name="plus-circle"
-          color={colors.white}
-          size={40}
-        />
+        <MaterialCommunityIcons name="plus-circle" color={color} size={size} />
       </View>
-    </TouchableOpacity>
+    </TouchableWithoutFeedback>
   );
 }
 
@@ -22,13 +18,13 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     backgroundColor: colors.primary,
-    borderColor: colors.white,
+    // borderColor: colors.primary,
     borderRadius: 40,
-    borderWidth: 10,
+    //borderWidth: 10,
     bottom: 20,
-    height: 80,
+    height: 70,
     justifyContent: "center",
-    width: 80,
+    width: 70,
   },
 });
 
