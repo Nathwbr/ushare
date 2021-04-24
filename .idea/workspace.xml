@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/screens/logged/MyListingsScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/navigation/PublishNavigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/navigation/AccountNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/AccountNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ImageInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ImageInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ImageInputList.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ImageInputList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/forms/FormImagePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/forms/FormImagePicker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/AppNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/navigation/FeedNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/FeedNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/navigation/NewListingButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/NewListingButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/navigation/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/logged/AccountScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/AccountScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/logged/BalanceScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/BalanceScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/logged/ListingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/ListingsScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/CameraScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/CameraScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/ListingEditScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/ListingEditScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,19 +62,6 @@
       <recent name="C:\Users\Nathan\ushare\data\listings" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,7 +84,8 @@
       <workItem from="1619081425287" duration="6348000" />
       <workItem from="1619091598093" duration="7926000" />
       <workItem from="1619101618643" duration="11826000" />
-      <workItem from="1619193038216" duration="5921000" />
+      <workItem from="1619193038216" duration="12697000" />
+      <workItem from="1619255577199" duration="1217000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -277,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619193070250</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Improving navigation">
+      <created>1619199024128</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1619199024128</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

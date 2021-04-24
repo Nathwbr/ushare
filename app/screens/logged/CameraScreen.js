@@ -4,7 +4,7 @@ import { Camera } from "expo-camera";
 import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
 
-export const CameraScreen = () => {
+export const CameraScreen = ({ navigation }) => {
   const cameraRef = useRef();
   const [type, setType] = useState(Camera.Constants.Type.back);
 
@@ -12,7 +12,8 @@ export const CameraScreen = () => {
     if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync();
       console.log(photo);
-      //navigation.goBack()
+      //EXPORTER photo vers ImageInput
+      //navigation.goBack();
     }
   };
 
@@ -22,7 +23,8 @@ export const CameraScreen = () => {
         mediaTypes: ImagePicker.MediaTypeOptions.Images,
       });
       console.log(photo);
-      //navigation.goBack()
+      //EXPORTER photo vers ImageInput
+      //navigation.goBack();
     }
   };
 
@@ -50,7 +52,7 @@ export const CameraScreen = () => {
   }, []);
 
   return (
-    <View style={{ width: "100%", height: 500 }}>
+    <View style={{ width: "100%", height: "100%" }}>
       <Camera
         style={{ flex: 1 }}
         type={type}

@@ -64,7 +64,7 @@ const categories = [
   },
 ];
 
-function ListingEditScreen() {
+function ListingEditScreen({ navigation }) {
   const location = useLocation().location;
   return (
     <Screen style={styles.container}>
@@ -79,7 +79,7 @@ function ListingEditScreen() {
         onSubmit={(values) => console.log(location)}
         validationSchema={validationSchema}
       >
-        <FormImagePicker name="images" />
+        <FormImagePicker name="images" navigation={navigation} />
         <FormField maxLength={255} name="title" placeholder="Titre" />
         <FormField
           keyboardType="numeric"

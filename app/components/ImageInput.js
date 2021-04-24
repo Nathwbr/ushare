@@ -7,23 +7,11 @@ import {
   Alert,
 } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import * as ImagePicker from "expo-image-picker";
 
 import colors from "../config/colors";
+import routes from "../navigation/routes";
 
-function ImageInput({ imageUri, onChangeImage }) {
-  useEffect(() => {
-    requestPermission();
-  }, []);
-
-  const requestPermission = async () => {
-    const { granted } = await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (!granted)
-      alert(
-        "Vous devez autoriser la permission pour accéder à la bibliothèque."
-      );
-  };
-
+function ImageInput({ navigation, imageUri, onChangeImage }) {
   const handlePress = () => {
     if (!imageUri) selectImage();
     else
@@ -34,21 +22,15 @@ function ImageInput({ imageUri, onChangeImage }) {
       );
   };
 
-  const selectImage = async () => {
-    try {
-      const photo = await ImagePicker.launchImageLibraryAsync({
-        // ICI INSERER CAMERASCREEN //todo
-        mediaTypes: ImagePicker.MediaTypeOptions.Images,
-        quality: 0.5,
-      });
-      if (!photo.cancelled) onChangeImage(photo.uri);
-    } catch (error) {
-      console.log("Erreur de lecture de l'image", error);
-    }
+  const selectImage = () => {
+    console.log(navigation);
+    navigation.navigate("CameraScreen");
+    //Récupérer photo
+    // onChangeImage(photo.uri);
   };
 
   return (
-    <TouchableWithoutFeedback onPress={handlePress}>
+    <TouchableWithoutFeedback onPress={handlePress()}>
       <View style={styles.container}>
         {!imageUri && (
           <MaterialCommunityIcons

@@ -9,7 +9,7 @@ import AccountNavigator from "./AccountNavigator";
 import FeedNavigator from "./FeedNavigator";
 import SearchScreen from "../screens/logged/SearchScreen";
 import MessagesScreen from "../screens/logged/MessagesScreen";
-import ListingEditScreen from "../screens/logged/ListingEditScreen";
+import PublishNavigator from "./PublishNavigator";
 import NewListingButton from "./NewListingButton";
 import routes from "./routes";
 
@@ -49,7 +49,7 @@ const AppNavigator = () => (
 
     <Tab.Screen
       name="Poster"
-      component={ListingEditScreen}
+      component={PublishNavigator}
       options={({ navigation }) => ({
         tabBarButton: ({ color, size }) => (
           <NewListingButton
