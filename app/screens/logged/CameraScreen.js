@@ -4,16 +4,15 @@ import { Camera } from "expo-camera";
 import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
 
-export const CameraScreen = ({ navigation }) => {
+export const CameraScreen = ({ navigation, route }) => {
   const cameraRef = useRef();
   const [type, setType] = useState(Camera.Constants.Type.back);
 
   const snap = async () => {
     if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync();
-      console.log(photo);
-      //EXPORTER photo vers ImageInput
-      //navigation.goBack();
+      route.params.onChangeImage(photo.uri);
+      navigation.goBack();
     }
   };
 
@@ -22,21 +21,17 @@ export const CameraScreen = ({ navigation }) => {
       const photo = await ImagePicker.launchImageLibraryAsync({
         mediaTypes: ImagePicker.MediaTypeOptions.Images,
       });
-      console.log(photo);
-      //EXPORTER photo vers ImageInput
-      //navigation.goBack();
+      route.params.onChangeImage(photo.uri);
+      navigation.goBack();
     }
   };
 
   useEffect(() => {
     (async () => {
       if (Platform.OS !== "web") {
-        console.log("Ask Permission");
         const libraryPermission = await ImagePicker.requestMediaLibraryPermissionsAsync();
         const cameraPermission = await ImagePicker.requestCameraPermissionsAsync();
 
-        console.log("libraryPermission", libraryPermission);
-        console.log("cameraPermission", cameraPermission);
         if (libraryPermission.status !== "granted") {
           alert(
             "Désolé, nous avons besoin des autorisations d'accès au stockage pour que cela fonctionne !"

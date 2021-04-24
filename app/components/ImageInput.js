@@ -23,14 +23,13 @@ function ImageInput({ navigation, imageUri, onChangeImage }) {
   };
 
   const selectImage = () => {
-    console.log(navigation);
-    navigation.navigate("CameraScreen");
+    navigation.navigate("CameraScreen", { onChangeImage });
     //Récupérer photo
     // onChangeImage(photo.uri);
   };
 
   return (
-    <TouchableWithoutFeedback onPress={handlePress()}>
+    <TouchableWithoutFeedback onPress={() => handlePress()}>
       <View style={styles.container}>
         {!imageUri && (
           <MaterialCommunityIcons

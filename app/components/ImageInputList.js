@@ -9,7 +9,6 @@ function ImageInputList({
   onAddImage,
 }) {
   const scrollView = useRef();
-
   return (
     <View>
       <ScrollView

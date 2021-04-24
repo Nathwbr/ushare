@@ -11,7 +11,10 @@ import routes from "./routes";
 const Stack = createStackNavigator();
 
 const PublishNavigator = ({}) => (
-  <Stack.Navigator screenOptions={{ headerShown: true }}>
+  <Stack.Navigator
+    initialRouteName={routes.LISTING_EDIT}
+    screenOptions={{ headerShown: true }}
+  >
     <Stack.Screen
       name={routes.LISTING_EDIT}
       component={ListingEditScreen}

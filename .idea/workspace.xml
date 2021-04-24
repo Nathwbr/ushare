@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/navigation/PublishNavigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/ImageInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ImageInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/ImageInputList.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ImageInputList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/forms/FormImagePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/forms/FormImagePicker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/AppNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/PublishNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/PublishNavigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/screens/logged/CameraScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/CameraScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/screens/logged/ListingEditScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/logged/ListingEditScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,8 @@
       <workItem from="1619091598093" duration="7926000" />
       <workItem from="1619101618643" duration="11826000" />
       <workItem from="1619193038216" duration="12697000" />
-      <workItem from="1619255577199" duration="1217000" />
+      <workItem from="1619255577199" duration="3082000" />
+      <workItem from="1619284326763" duration="1072000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -269,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619199024128</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Camera">
+      <created>1619256820702</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1619256820702</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +324,8 @@
     <MESSAGE value="Creating Navigation and improving registerScreen" />
     <MESSAGE value="Navigation" />
     <MESSAGE value="Improving navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improving navigation" />
+    <MESSAGE value="Camera" />
+    <option name="LAST_COMMIT_MESSAGE" value="Camera" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
