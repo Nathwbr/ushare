@@ -11,12 +11,28 @@ import routes from "../../navigation/routes";
 
 const menuItems = [
   {
-    title: "Mes Repas",
+    title: "Ma balance",
+    icon: {
+      name: "currency-eur",
+      backgroundColor: colors.primary,
+    },
+    targetScreen: routes.MYBALANCE,
+  },
+  {
+    title: "Mes repas",
     icon: {
       name: "format-list-bulleted",
       backgroundColor: colors.primary,
     },
     targetScreen: routes.MYLISTINGS,
+  },
+  {
+    title: "Historique",
+    icon: {
+      name: "history",
+      backgroundColor: colors.primary,
+    },
+    targetScreen: routes.MYHISTORY,
   },
 ];
 
@@ -28,6 +44,7 @@ function AccountScreen({ navigation }) {
           title="Nathan WEBER"
           subTitle="nathan.weber@isep.fr"
           image={require("../../assets/profilPicture.jpg")}
+          onPress={() => navigation.navigate(routes.MYPROFILE)}
         />
       </View>
       <View style={styles.container}>
@@ -57,6 +74,7 @@ function AccountScreen({ navigation }) {
             backgroundColor={colors.secondary}
           />
         }
+        onPress={() => navigation.navigate(routes.MYSETTINGS)}
       />
       <ListItem
         title="Déconnection"
@@ -66,6 +84,7 @@ function AccountScreen({ navigation }) {
             backgroundColor={colors.secondary}
           />
         }
+        onPress={() => console.log("Déconnexion")}
       />
     </Screen>
   );

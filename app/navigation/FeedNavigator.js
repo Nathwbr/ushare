@@ -17,6 +17,7 @@ const FeedNavigator = () => (
         headerTintColor: "white",
         headerTitleAlign: "center",
         headerStyle: { backgroundColor: colors.primary },
+        headerShown: false,
       }}
     />
     <Stack.Screen
