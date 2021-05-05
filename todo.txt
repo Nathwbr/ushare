@@ -1,2 +1,3 @@
 sur android renommer titre header " account" en compte et le centrer sur android
 sur IOS la list qui content mes repas dans accountscreen et scrollable et ne devrait pas l'etre
+fix camera component sur s'inscrire
