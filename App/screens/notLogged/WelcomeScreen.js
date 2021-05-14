@@ -21,21 +21,21 @@ function WelcomeScreen({ navigation }) {
           <View style={styles.slide1}>
             <Text style={styles.text}>Créez votre profil</Text>
             <Image
-              source={require("../../assets/intro1.png")}
+              source={require("../../assets/images/intro1.png")}
               style={styles.imageIntro}
             />
           </View>
           <View style={styles.slide2}>
             <Text style={styles.text}>Partagez vos repas</Text>
             <Image
-              source={require("../../assets/intro2.png")}
+              source={require("../../assets/images/intro2.png")}
               style={styles.imageIntro}
             />
           </View>
           <View style={styles.slide3}>
             <Text style={styles.text}>Et soyez récompensé !</Text>
             <Image
-              source={require("../../assets/intro3.png")}
+              source={require("../../assets/images/intro3.png")}
               style={styles.imageIntro}
             />
           </View>

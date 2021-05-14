@@ -13,14 +13,14 @@ const initialMessages = [
     id: 1,
     title: "Nathan WEBER",
     description: "Hé ! Cet article est-il encore disponible ?",
-    image: require("../../assets/profilPicture.jpg"),
+    image: require("../../assets/images/profilPicture.jpg"),
   },
   {
     id: 2,
     title: "Nathan WEBER",
     description:
       "Je suis intéressé par cet article. Quand pourrez-vous le poster ?",
-    image: require("../../assets/profilPicture.jpg"),
+    image: require("../../assets/images/profilPicture.jpg"),
   },
 ];
 
@@ -57,7 +57,7 @@ function MessagesScreen(props) {
               id: 2,
               title: "T2",
               description: "D2",
-              image: require("../../assets/profilPicture.jpg"),
+              image: require("../../assets/images/profilPicture.jpg"),
             },
           ]);
         }}

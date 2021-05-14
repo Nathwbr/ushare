@@ -23,7 +23,7 @@ function Card({ title, subTitle, image, onPress }) {
               {subTitle}
             </Text>
             <Image
-              source={require("../assets/ucoin.png")}
+              source={require("../assets/images/ucoin.png")}
               style={styles.ucoin}
             />
           </View>

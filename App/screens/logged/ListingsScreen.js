@@ -88,7 +88,7 @@ function ListingsScreen({ navigation }) {
         </View>
         <View style={styles.balance}>
           <Image
-            source={require("../../assets/ucoin.png")}
+            source={require("../../assets/images/ucoin.png")}
             style={styles.ucoin}
           />
           <Text style={{ fontSize: 20, fontWeight: "bold" }}>100</Text>

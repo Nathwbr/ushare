@@ -2,10 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.expo-shared/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/assets/fonts/Roboto/Roboto-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/components/AppContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/screens/LoadingScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/splash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/adaptive-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/adaptive-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/chair.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/chair.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/intro1.png" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/intro1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/intro2.png" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/intro2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/intro3.png" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/intro3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/profilPicture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/profilPicture.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/splash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/ucoin.png" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/ucoin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/wlogo250250.png" beforeDir="false" afterPath="$PROJECT_DIR$/App/assets/images/wlogo250250.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/CategoryPickerItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/CategoryPickerItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/IconIonicons.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/IconIonicons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/IconMaterialCommunity.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/IconMaterialCommunity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ImageInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/ImageInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ImageInputList.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/ImageInputList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/Picker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/PickerItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/PickerItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/Screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/Text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/TextInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/TextInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/forms/ErrorMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/forms/ErrorMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/forms/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/forms/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/forms/FormField.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/forms/FormField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/forms/FormImagePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/forms/FormImagePicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/forms/FormPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/forms/FormPicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/forms/SubmitButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/forms/SubmitButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/forms/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/forms/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/lists/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/lists/ListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/lists/ListItemDeleteAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/lists/ListItemDeleteAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/lists/ListItemSeparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/lists/ListItemSeparator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/lists/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/lists/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/config/colors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/config/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/useLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/hooks/useLocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/AccountNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AccountNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AppNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/AuthNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AuthNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/FeedNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/FeedNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/Navigator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/NewListingButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/NewListingButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/PublishNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/PublishNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/navigationTheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/navigationTheme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/AccountScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/AccountScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/BalanceScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/BalanceScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/CameraScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/CameraScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/ListingDetailsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingDetailsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/ListingEditScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingEditScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/ListingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/MessagesScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/MessagesScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/MyBalanceScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/MyBalanceScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/MyHistoryScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/MyHistoryScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/MyListingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/MyListingsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/MyProfileScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/MyProfileScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/MySettingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/MySettingsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/SearchScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/SearchScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/logged/ViewImageScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ViewImageScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/notLogged/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/notLogged/LoginScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/notLogged/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/notLogged/RegisterScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/notLogged/WelcomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/notLogged/WelcomeScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,12 +131,25 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nathan\ushare\App\assets\images" />
+      <recent name="C:\Users\Nathan\ushare\app\navigation" />
+      <recent name="C:\Users\Nathan\ushare\app\components\forms" />
       <recent name="C:\Users\Nathan\ushare\app" />
       <recent name="C:\Users\Nathan\ushare\app\screens\logged" />
-      <recent name="C:\Users\Nathan\ushare\app\components" />
-      <recent name="C:\Users\Nathan\ushare\data\listings\images" />
-      <recent name="C:\Users\Nathan\ushare\data\listings" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,6 +180,11 @@
       <workItem from="1620160021151" duration="11559000" />
       <workItem from="1620226795755" duration="134000" />
       <workItem from="1620227324098" duration="1262000" />
+      <workItem from="1620229774461" duration="630000" />
+      <workItem from="1620232546918" duration="655000" />
+      <workItem from="1621010352077" duration="536000" />
+      <workItem from="1621010930225" duration="1450000" />
+      <workItem from="1621025811749" duration="4211000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -292,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620171748211</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="/">
+      <created>1620229792481</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1620229792481</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +447,8 @@
     <MESSAGE value="Camera" />
     <MESSAGE value="Thanks Hippo" />
     <MESSAGE value="Ajout catégories dans l'accueil, création de MyBalanceScreen.js , MyHistoryScreen.js et MyProfileScreen.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout catégories dans l'accueil, création de MyBalanceScreen.js , MyHistoryScreen.js et MyProfileScreen.js" />
+    <MESSAGE value="/" />
+    <option name="LAST_COMMIT_MESSAGE" value="/" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

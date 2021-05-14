@@ -20,7 +20,7 @@ function LoginScreen(props) {
     <Screen style={styles.container}>
       <Image
         style={styles.logo}
-        source={require("../../assets/wlogo250250.png")}
+        source={require("../../assets/images/wlogo250250.png")}
       />
 
       <Form

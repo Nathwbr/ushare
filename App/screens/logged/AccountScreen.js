@@ -43,7 +43,7 @@ function AccountScreen({ navigation }) {
         <ListItem
           title="Nathan WEBER"
           subTitle="nathan.weber@isep.fr"
-          image={require("../../assets/profilPicture.jpg")}
+          image={require("../../assets/images/profilPicture.jpg")}
           onPress={() => navigation.navigate(routes.MYPROFILE)}
         />
       </View>

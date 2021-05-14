@@ -15,13 +15,13 @@ function ListingDetailsScreen({ route }) {
         <View style={styles.price}>
           <Text style={styles.priceText}>{listing.price}</Text>
           <Image
-            source={require("../../assets/ucoin.png")}
+            source={require("../../assets/images/ucoin.png")}
             style={styles.ucoin}
           />
         </View>
         <View style={styles.userContainer}>
           <ListItem
-            image={require("../../assets/profilPicture.jpg")}
+            image={require("../../assets/images/profilPicture.jpg")}
             title="Nathan WEBER"
             subTitle="3 repas"
           />

@@ -1,3 +1,11 @@
 sur android renommer titre header " account" en compte et le centrer sur android
 sur IOS la list qui content mes repas dans accountscreen et scrollable et ne devrait pas l'etre
 fix camera component sur s'inscrire
+fix bug camera component quand la photo n'est pas prise
+Ajouter préremplissage
+Créer recherche screen
+Créer balance screen
+Créer lien connecté et déconnecté
+Créer panier
+Créer bouton réserver repas
+Créer nombre de repas disponibles sur le Card d'un repas

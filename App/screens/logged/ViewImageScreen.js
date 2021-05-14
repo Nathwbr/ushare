@@ -20,7 +20,7 @@ function ViewImageScreen(props) {
       <Image
         resizeMode="contain"
         style={styles.image}
-        source={require("../../assets/chair.jpg")}
+        source={require("../../assets/images/chair.jpg")}
       />
     </View>
   );
