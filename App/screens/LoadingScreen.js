@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { Image, View, StyleSheet, ActivityIndicator } from "react-native";
 import * as Font from "expo-font";
-
-//For context :
-import { useContext } from "react";
 import AppContext from "../components/AppContext";
-function LoadingScreen(props) {
-  //Global Context:
+
+function LoadingScreen() {
   const TheContext = useContext(AppContext);
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { StyleSheet, View, FlatList } from "react-native";
 
 import { ListItem, ListItemSeparator } from "../../components/lists";
@@ -8,6 +8,7 @@ import IconIonicons from "../../components/IconIonicons";
 import Screen from "../../components/Screen";
 
 import routes from "../../navigation/routes";
+import AppContext from "../../components/AppContext";
 
 const menuItems = [
   {
@@ -37,6 +38,7 @@ const menuItems = [
 ];
 
 function AccountScreen({ navigation }) {
+  const TheContext = useContext(AppContext);
   return (
     <Screen style={styles.screen}>
       <View style={styles.container}>
@@ -84,7 +86,7 @@ function AccountScreen({ navigation }) {
             backgroundColor={colors.secondary}
           />
         }
-        onPress={() => console.log("Déconnexion")}
+        onPress={() => TheContext.SetIsLoggedIn(false)}
       />
     </Screen>
   );

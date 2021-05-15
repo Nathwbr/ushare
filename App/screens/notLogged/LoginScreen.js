@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import { StyleSheet, Image } from "react-native";
 import * as Yup from "yup";
+
+import AppContext from "../../components/AppContext";
 
 import Screen from "../../components/Screen";
 import { Form, FormField, SubmitButton } from "../../components/forms";
@@ -15,7 +17,15 @@ const validationSchema = Yup.object({
   password: Yup.string().required("Saisissez votre mot de passe"),
 });
 
-function LoginScreen(props) {
+function LoginScreen() {
+  const TheContext = useContext(AppContext);
+  function Connexion(values, force = false) {
+    if (force) {
+      console.log(values);
+      TheContext.SetIsLoggedIn(true);
+    }
+  }
+
   return (
     <Screen style={styles.container}>
       <Image
@@ -25,7 +35,7 @@ function LoginScreen(props) {
 
       <Form
         initialValues={{ email: "", password: "" }}
-        onSubmit={(values) => console.log(values)}
+        onSubmit={(values) => Connexion(values, true)}
         validationSchema={validationSchema}
       >
         <FormField
