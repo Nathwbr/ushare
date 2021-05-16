@@ -5,7 +5,7 @@ import LoginScreen from "../screens/notLogged/LoginScreen";
 import RegisterScreen from "../screens/notLogged/RegisterScreen";
 import WelcomeScreen from "../screens/notLogged/WelcomeScreen";
 import CameraScreen from "../screens/logged/CameraScreen";
-import RegistrationSuccesful from "../screens/notLogged/RegistrationSuccesful";
+import RegistrationSuccesfulScreen from "../screens/notLogged/RegistrationSuccesfulScreen";
 
 import colors from "../config/colors";
 
@@ -51,12 +51,14 @@ const AuthNavigator = () => (
       }}
     />
     <Stack.Screen
-      name={"RegistrationSuccesful"}
-      component={RegistrationSuccesful}
+      name={"RegistrationSuccesfulScreen"}
+      component={RegistrationSuccesfulScreen}
       options={{
         headerTintColor: "white",
         headerTitleAlign: "center",
-        headerShown: false,
+        headerShown: true,
+        title: "Inscription réussie !",
+        headerLeft: "",
         headerStyle: { backgroundColor: colors.primary },
       }}
     />

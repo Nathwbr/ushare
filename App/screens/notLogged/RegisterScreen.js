@@ -5,8 +5,8 @@ import * as Yup from "yup";
 import Screen from "../../components/Screen";
 import { Form, FormField, SubmitButton } from "../../components/forms";
 import FormImagePicker from "../../components/forms/FormImagePicker";
-import { View } from "react-native-web";
-import RegistrationSuccesful from "./RegistrationSuccesful";
+import RegistrationSuccesfulScreen from "./RegistrationSuccesfulScreen";
+import Button from "../../components/Button";
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required("Saissisez votre prénom").label("Prénom"),
@@ -36,7 +36,7 @@ const validationSchema = Yup.object().shape({
 function RegisterScreen({ navigation }) {
   function Register(values) {
     console.log(values);
-    navigation.navigate(RegistrationSuccesful);
+    navigation.navigate(RegistrationSuccesfulScreen);
   }
 
   return (
