@@ -8,7 +8,7 @@ import {
   FormPicker as Picker,
   SubmitButton,
 } from "../../components/forms";
-import FormImagePicker from "../../components/forms/FormImagePicker";
+import FormImagePickerList from "../../components/forms/FormImagePickerList";
 import CategoryPickerItem from "../../components/CategoryPickerItem";
 import Screen from "../../components/Screen";
 import useLocation from "../../hooks/useLocation";
@@ -79,7 +79,7 @@ function ListingEditScreen({ navigation }) {
         onSubmit={(values) => console.log(location)}
         validationSchema={validationSchema}
       >
-        <FormImagePicker name="images" navigation={navigation} />
+        <FormImagePickerList name="images" navigation={navigation} />
         <FormField maxLength={255} name="title" placeholder="Titre" />
         <FormField
           keyboardType="numeric"

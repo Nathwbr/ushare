@@ -5,7 +5,9 @@ fix bug camera component quand la photo n'est pas prise
 Ajouter préremplissage
 Créer recherche screen
 Créer balance screen
-Créer lien connecté et déconnecté
-Créer panier
 Créer bouton réserver repas
 Créer nombre de repas disponibles sur le Card d'un repas
+
+
+Improvements :
+Pour la navigation a lieu d'utiliser la méthode "drill", stocker la navigation dans AppContext

@@ -4,6 +4,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import LoginScreen from "../screens/notLogged/LoginScreen";
 import RegisterScreen from "../screens/notLogged/RegisterScreen";
 import WelcomeScreen from "../screens/notLogged/WelcomeScreen";
+import CameraScreen from "../screens/logged/CameraScreen";
+import RegistrationSuccesful from "../screens/notLogged/RegistrationSuccesful";
 
 import colors from "../config/colors";
 
@@ -35,6 +37,26 @@ const AuthNavigator = () => (
       component={RegisterScreen}
       options={{
         headerTintColor: "white",
+        headerStyle: { backgroundColor: colors.primary },
+      }}
+    />
+    <Stack.Screen
+      name={"CameraScreen"}
+      component={CameraScreen}
+      options={{
+        headerTintColor: "white",
+        headerTitleAlign: "center",
+        headerShown: false,
+        headerStyle: { backgroundColor: colors.primary },
+      }}
+    />
+    <Stack.Screen
+      name={"RegistrationSuccesful"}
+      component={RegistrationSuccesful}
+      options={{
+        headerTintColor: "white",
+        headerTitleAlign: "center",
+        headerShown: false,
         headerStyle: { backgroundColor: colors.primary },
       }}
     />

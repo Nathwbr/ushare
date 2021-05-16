@@ -2,23 +2,26 @@ import React from "react";
 import { useFormikContext } from "formik";
 
 import ErrorMessage from "./ErrorMessage";
-import ImageInputNotList from "../ImageInputNotList";
+import ImageInputList from "../ImageInputList";
 
-function FormImagePicker({ navigation, name }) {
+function FormImagePickerList({ navigation, name }) {
   const { errors, setFieldValue, touched, values } = useFormikContext();
-  const imageUri = values[name];
+  const imageUris = values[name];
   const handleAdd = (uri) => {
-    setFieldValue(name, [uri]);
+    setFieldValue(name, [...imageUris, uri]);
   };
 
   const handleRemove = (uri) => {
-    setFieldValue(name, []);
+    setFieldValue(
+      name,
+      imageUris.filter((imageUri) => imageUri !== uri)
+    );
   };
 
   return (
     <>
-      <ImageInputNotList
-        imageUri={imageUri}
+      <ImageInputList
+        imageUris={imageUris}
         onAddImage={handleAdd}
         onRemoveImage={handleRemove}
         navigation={navigation}
@@ -28,4 +31,4 @@ function FormImagePicker({ navigation, name }) {
   );
 }
 
-export default FormImagePicker;
+export default FormImagePickerList;

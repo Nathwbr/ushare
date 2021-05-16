@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   View,
   StyleSheet,
@@ -9,7 +9,6 @@ import {
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import colors from "../config/colors";
-import routes from "../navigation/routes";
 
 function ImageInput({ navigation, imageUri, onChangeImage }) {
   const handlePress = () => {
@@ -23,6 +22,7 @@ function ImageInput({ navigation, imageUri, onChangeImage }) {
   };
 
   const selectImage = () => {
+    //console.log(navigation);
     navigation.navigate("CameraScreen", { onChangeImage });
     //Récupérer photo
     // onChangeImage(photo.uri);

@@ -107,20 +107,18 @@ function ListingsScreen({ navigation }) {
         </ScrollView>
       </View>
 
-      <Screen style={styles.screen}>
-        <FlatList
-          data={listings}
-          keyExtractor={(listing) => listing.id.toString()}
-          renderItem={({ item }) => (
-            <Card
-              title={item.title}
-              subTitle={item.price}
-              image={item.image}
-              onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
-            />
-          )}
-        />
-      </Screen>
+      <FlatList
+        data={listings}
+        keyExtractor={(listing) => listing.id.toString()}
+        renderItem={({ item }) => (
+          <Card
+            title={item.title}
+            subTitle={item.price}
+            image={item.image}
+            onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
+          />
+        )}
+      />
     </>
   );
 }

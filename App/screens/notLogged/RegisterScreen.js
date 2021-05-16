@@ -1,16 +1,22 @@
 import React from "react";
-import { View } from "react-native-web";
 import { StyleSheet } from "react-native";
 import * as Yup from "yup";
 
 import Screen from "../../components/Screen";
 import { Form, FormField, SubmitButton } from "../../components/forms";
 import FormImagePicker from "../../components/forms/FormImagePicker";
+import { View } from "react-native-web";
+import RegistrationSuccesful from "./RegistrationSuccesful";
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required("Saissisez votre prénom").label("Prénom"),
   lastName: Yup.string().required("Saissisez votre nom").label("Nom"),
-  email: Yup.string().required("Saissisez votre email").email().label("Email"),
+  email: Yup.string()
+    .required("Saissisez votre adresse email @isep.fr")
+    .matches(
+      /^[a-z0-9](\.?[a-z0-9]){1,}@isep\.fr$/,
+      "Votre email doit être de la forme prenom.nom@isep.fr"
+    ),
   password: Yup.string()
     .required("Saisissez votre mot de passe")
     .matches(
@@ -27,7 +33,12 @@ const validationSchema = Yup.object().shape({
   images: Yup.array().min(1, "Ajoutez une photo de profil"),
 });
 
-function RegisterScreen() {
+function RegisterScreen({ navigation }) {
+  function Register(values) {
+    console.log(values);
+    navigation.navigate(RegistrationSuccesful);
+  }
+
   return (
     <Screen style={styles.container}>
       <Form
@@ -39,10 +50,10 @@ function RegisterScreen() {
           passwordConfirmation: "",
           images: [],
         }}
-        onSubmit={(values) => console.log(values)}
+        onSubmit={(values) => Register(values)}
         validationSchema={validationSchema}
       >
-        <FormImagePicker name="images" />
+        <FormImagePicker name="images" navigation={navigation} />
 
         <FormField
           autoCorrect={false}

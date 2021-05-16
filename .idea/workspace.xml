@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/App/components/ImageInputNotList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/components/forms/FormImagePickerList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/screens/notLogged/RegistrationSuccesful.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/LoadingScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/LoadingScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/logged/AccountScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/AccountScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/notLogged/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/notLogged/LoginScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/components/ImageInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/ImageInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/components/forms/FormImagePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/forms/FormImagePicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/navigation/AuthNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AuthNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/ListingEditScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingEditScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/notLogged/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/notLogged/RegisterScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +52,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/App/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Nathan\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nathan\ushare\App\components" />
+      <recent name="C:\Users\Nathan\ushare\App\components\forms" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nathan\ushare\App\assets\images" />
       <recent name="C:\Users\Nathan\ushare\app\navigation" />
@@ -108,6 +119,8 @@
       <workItem from="1621010352077" duration="536000" />
       <workItem from="1621010930225" duration="1450000" />
       <workItem from="1621025811749" duration="4211000" />
+      <workItem from="1621115699645" duration="11815000" />
+      <workItem from="1621175532435" duration="5052000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -319,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620229792481</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Gestion de la connexion et déconnexion">
+      <created>1621115820667</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1621115820667</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +391,8 @@
     <MESSAGE value="Thanks Hippo" />
     <MESSAGE value="Ajout catégories dans l'accueil, création de MyBalanceScreen.js , MyHistoryScreen.js et MyProfileScreen.js" />
     <MESSAGE value="/" />
-    <option name="LAST_COMMIT_MESSAGE" value="/" />
+    <MESSAGE value="Gestion de la connexion et déconnexion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gestion de la connexion et déconnexion" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
