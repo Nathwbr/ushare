@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/App/assets/images/bravo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/navigation/AuthNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AuthNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/components/forms/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/components/forms/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/notLogged/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/notLogged/LoginScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/screens/notLogged/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/notLogged/RegisterScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/notLogged/RegistrationSuccesful.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/notLogged/RegistrationSuccesfulScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,21 +63,6 @@
       <recent name="C:\Users\Nathan\ushare\app\screens\logged" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -114,7 +98,9 @@
       <workItem from="1621010930225" duration="1450000" />
       <workItem from="1621025811749" duration="4211000" />
       <workItem from="1621115699645" duration="11815000" />
-      <workItem from="1621175532435" duration="8499000" />
+      <workItem from="1621175532435" duration="9797000" />
+      <workItem from="1621242966576" duration="1000" />
+      <workItem from="1621452674705" duration="2993000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -340,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621181816417</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Improving RegistrationSuccesfulScreen.js">
+      <created>1621186156563</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1621186156563</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +387,8 @@
     <MESSAGE value="/" />
     <MESSAGE value="Gestion de la connexion et déconnexion" />
     <MESSAGE value="Improving RegisterScreen : Use of a ImageInputNotList.js instead of ImageInput and the creation of RegistrationSuccesfulScreen.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improving RegisterScreen : Use of a ImageInputNotList.js instead of ImageInput and the creation of RegistrationSuccesfulScreen.js" />
+    <MESSAGE value="Improving RegistrationSuccesfulScreen.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improving RegistrationSuccesfulScreen.js" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

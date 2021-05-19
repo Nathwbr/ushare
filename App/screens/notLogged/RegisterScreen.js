@@ -1,12 +1,21 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import {
+  View,
+  KeyboardAvoidingView,
+  TextInput,
+  StyleSheet,
+  Text,
+  Platform,
+  TouchableWithoutFeedback,
+  Button,
+  Keyboard,
+} from "react-native";
 import * as Yup from "yup";
 
 import Screen from "../../components/Screen";
 import { Form, FormField, SubmitButton } from "../../components/forms";
 import FormImagePicker from "../../components/forms/FormImagePicker";
 import RegistrationSuccesfulScreen from "./RegistrationSuccesfulScreen";
-import Button from "../../components/Button";
 
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required("Saissisez votre prénom").label("Prénom"),
@@ -40,71 +49,83 @@ function RegisterScreen({ navigation }) {
   }
 
   return (
-    <Screen style={styles.container}>
-      <Form
-        initialValues={{
-          firstName: "",
-          lastName: "",
-          email: "",
-          password: "",
-          passwordConfirmation: "",
-          images: [],
-        }}
-        onSubmit={(values) => Register(values)}
-        validationSchema={validationSchema}
-      >
-        <FormImagePicker name="images" navigation={navigation} />
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      style={styles.container}
+    >
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <View style={styles.inner}>
+          <Form
+            initialValues={{
+              firstName: "",
+              lastName: "",
+              email: "",
+              password: "",
+              passwordConfirmation: "",
+              images: [],
+            }}
+            onSubmit={(values) => Register(values)}
+            validationSchema={validationSchema}
+          >
+            <FormImagePicker name="images" navigation={navigation} />
 
-        <FormField
-          autoCorrect={false}
-          icon="account"
-          name="firstName"
-          placeholder="Prénom"
-        />
-        <FormField
-          autoCorrect={false}
-          icon="account"
-          name="lastName"
-          placeholder="Nom"
-        />
+            <FormField
+              autoCorrect={false}
+              icon="account"
+              name="firstName"
+              placeholder="Prénom"
+            />
+            <FormField
+              autoCorrect={false}
+              icon="account"
+              name="lastName"
+              placeholder="Nom"
+            />
 
-        <FormField
-          autoCapitalize="none"
-          autoCorrect={false}
-          icon="email"
-          keyboardType="email-address"
-          name="email"
-          placeholder="Email"
-          textContentType="emailAddress"
-        />
-        <FormField
-          autoCapitalize="none"
-          autoCorrect={false}
-          icon="lock"
-          name="password"
-          placeholder="Mot de passe"
-          secureTextEntry
-          textContentType="password"
-        />
-        <FormField
-          autoCapitalize="none"
-          autoCorrect={false}
-          icon="lock"
-          name="passwordConfirmation"
-          placeholder="Confirmez votre mot de passe"
-          secureTextEntry
-          textContentType="password"
-        />
+            <FormField
+              autoCapitalize="none"
+              autoCorrect={false}
+              icon="email"
+              keyboardType="email-address"
+              name="email"
+              placeholder="Email"
+              textContentType="emailAddress"
+            />
+            <FormField
+              autoCapitalize="none"
+              autoCorrect={false}
+              icon="lock"
+              name="password"
+              placeholder="Mot de passe"
+              secureTextEntry
+              textContentType="password"
+            />
+            <FormField
+              autoCapitalize="none"
+              autoCorrect={false}
+              icon="lock"
+              name="passwordConfirmation"
+              placeholder="Confirmez votre mot de passe"
+              secureTextEntry
+              textContentType="password"
+            />
 
-        <SubmitButton title="S'inscrire" />
-      </Form>
-    </Screen>
+            <SubmitButton title="S'inscrire" />
+          </Form>
+        </View>
+      </TouchableWithoutFeedback>
+    </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
+    flex: 1,
+  },
+  inner: {
+    padding: 24,
+    flex: 1,
+    justifyContent: "space-around",
   },
 });
 

@@ -1,10 +1,17 @@
 import React, { useState, useContext } from "react";
-import { StyleSheet, Image } from "react-native";
+import {
+  View,
+  KeyboardAvoidingView,
+  StyleSheet,
+  Platform,
+  TouchableWithoutFeedback,
+  Keyboard,
+  Image,
+} from "react-native";
 import * as Yup from "yup";
 
 import AppContext from "../../components/AppContext";
 
-import Screen from "../../components/Screen";
 import { Form, FormField, SubmitButton } from "../../components/forms";
 
 const validationSchema = Yup.object({
@@ -25,40 +32,45 @@ function LoginScreen() {
       TheContext.SetIsLoggedIn(true);
     }
   }
-
   return (
-    <Screen style={styles.container}>
-      <Image
-        style={styles.logo}
-        source={require("../../assets/images/wlogo250250.png")}
-      />
-
-      <Form
-        initialValues={{ email: "", password: "" }}
-        onSubmit={(values) => Connexion(values, true)}
-        validationSchema={validationSchema}
-      >
-        <FormField
-          autoCapitalize="none"
-          autoCorrect={false}
-          icon="email"
-          keyboardType="email-address"
-          name="email"
-          placeholder="prenom.nom@isep.fr"
-          textContentType="emailAddress"
-        />
-        <FormField
-          autoCapitalize="none"
-          autoCorrect={false}
-          icon="lock"
-          name="password"
-          placeholder="Mot de passe"
-          secureTextEntry
-          textContentType="password"
-        />
-        <SubmitButton title="Se connecter" />
-      </Form>
-    </Screen>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      style={styles.container}
+    >
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <View style={styles.inner}>
+          <Image
+            style={styles.logo}
+            source={require("../../assets/images/wlogo250250.png")}
+          />
+          <Form
+            initialValues={{ email: "", password: "" }}
+            onSubmit={(values) => Connexion(values, true)}
+            validationSchema={validationSchema}
+          >
+            <FormField
+              autoCapitalize="none"
+              autoCorrect={false}
+              icon="email"
+              keyboardType="email-address"
+              name="email"
+              placeholder="prenom.nom@isep.fr"
+              textContentType="emailAddress"
+            />
+            <FormField
+              autoCapitalize="none"
+              autoCorrect={false}
+              icon="lock"
+              name="password"
+              placeholder="Mot de passe"
+              secureTextEntry
+              textContentType="password"
+            />
+            <SubmitButton title="Se connecter" />
+          </Form>
+        </View>
+      </TouchableWithoutFeedback>
+    </KeyboardAvoidingView>
   );
 }
 
@@ -66,7 +78,13 @@ const styles = StyleSheet.create({
   buttonContainer: {
     marginVertical: 10,
   },
-
+  container: {
+    flex: 1,
+  },
+  inner: {
+    padding: 24,
+    flex: 1,
+  },
   logo: {
     width: 150,
     height: 150,
