@@ -1,6 +1,7 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
+import { Keyboard } from "react-native";
 
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -21,7 +22,7 @@ const Tab = createBottomTabNavigator();
 
 export const AppNavigator = () => {
   const TheContext = useContext(AppContext);
-  let test = (test = ({ navigation, route }) => ({
+  let PublishTabOptions = ({ navigation, route }) => ({
     tabBarVisible: ((route) => {
       const routeName = getFocusedRouteNameFromRoute(route) ?? "";
 
@@ -31,10 +32,10 @@ export const AppNavigator = () => {
 
       return true;
     })(route),
-  }));
+  });
 
   if (TheContext.isTabBarShown === true) {
-    test = ({ navigation, route }) => ({
+    PublishTabOptions = ({ navigation, route }) => ({
       tabBarButton: ({ color, size }) => (
         <NewListingButton
           onPress={() => navigation.navigate(routes.LISTING_EDIT)}
@@ -57,11 +58,30 @@ export const AppNavigator = () => {
     });
   }
 
+  useEffect(() => {
+    if (Platform.OS !== "android") {
+      return;
+    }
+    const keyboardDidShowListener = Keyboard.addListener(
+      "keyboardDidShow",
+      TheContext.SetIsTabBarShown(false)
+    );
+    const keyboardDidHideListener = Keyboard.addListener(
+      "keyboardDidHide",
+      TheContext.SetIsTabBarShown(true)
+    );
+    return () => {
+      keyboardDidShowListener.remove();
+      keyboardDidHideListener.remove();
+    };
+  }, []);
+
   return (
     <Tab.Navigator
       tabBarOptions={{
         activeTintColor: colors.secondary,
         inactiveTintColor: colors.white,
+        keyboardHidesTabBar: true,
         style: {
           backgroundColor: colors.primary,
         },
@@ -87,7 +107,11 @@ export const AppNavigator = () => {
         }}
       />
 
-      <Tab.Screen name="Poster" component={PublishNavigator} options={test} />
+      <Tab.Screen
+        name="Poster"
+        component={PublishNavigator}
+        options={PublishTabOptions}
+      />
 
       <Tab.Screen
         name="Messages"

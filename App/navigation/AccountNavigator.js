@@ -16,6 +16,7 @@ const Stack = createStackNavigator();
 const AccountNavigator = () => (
   <Stack.Navigator
     options={{
+      keyboardHidesTabBar: true,
       headerTintColor: "white",
       headerTitleAlign: "center",
       headerStyle: {

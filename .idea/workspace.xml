@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/navigation/AccountNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AccountNavigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AppNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/navigation/PublishNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/PublishNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/logged/CameraScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/CameraScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/logged/ListingEditScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingEditScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/notLogged/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/notLogged/RegisterScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +102,7 @@
       <workItem from="1621452674705" duration="10067000" />
       <workItem from="1621498746835" duration="11246000" />
       <workItem from="1621519390946" duration="380000" />
-      <workItem from="1621776715625" duration="7025000" />
+      <workItem from="1621776715625" duration="10545000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -349,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621456293472</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque CaméraScreen est ouvert">
+      <created>1621784627986</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1621784627986</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +415,8 @@
     <MESSAGE value="Improving RegisterScreen : Use of a ImageInputNotList.js instead of ImageInput and the creation of RegistrationSuccesfulScreen.js" />
     <MESSAGE value="Improving RegistrationSuccesfulScreen.js" />
     <MESSAGE value="Ajout de KeyboardAvoidingView" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de KeyboardAvoidingView" />
+    <MESSAGE value="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque CaméraScreen est ouvert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque CaméraScreen est ouvert" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
