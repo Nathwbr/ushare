@@ -1,17 +1,23 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useContext } from "react";
 import { View, TouchableOpacity, Platform } from "react-native";
 import { Camera } from "expo-camera";
 import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
 
+import AppContext from "../../components/AppContext";
+
 export const CameraScreen = ({ navigation, route }) => {
   const cameraRef = useRef();
   const [type, setType] = useState(Camera.Constants.Type.back);
-
+  const TheContext = useContext(AppContext);
+  TheContext.SetIsTabBarShown(false);
   const snap = async () => {
     if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync();
       route.params.onChangeImage(photo.uri);
+      console.log(TheContext.IsTabBarShown);
+      TheContext.SetIsTabBarShown(true);
+      console.log(TheContext.IsTabBarShown);
       navigation.goBack();
     }
   };
@@ -93,13 +99,16 @@ export const CameraScreen = ({ navigation, route }) => {
               alignItems: "center",
               backgroundColor: "transparent",
             }}
-            onPress={() => {
-              setType(
-                type === Camera.Constants.Type.back
-                  ? Camera.Constants.Type.front
-                  : Camera.Constants.Type.back
-              );
-            }}
+            onPress={
+              // () => console.log(TheContext.IsTabBarShown)
+              () => {
+                setType(
+                  type === Camera.Constants.Type.back
+                    ? Camera.Constants.Type.front
+                    : Camera.Constants.Type.back
+                );
+              }
+            }
           >
             <MaterialCommunityIcons
               name="camera-switch"

@@ -6,6 +6,7 @@ import {
   Text,
   Image,
   ScrollView,
+  TouchableWithoutFeedback,
 } from "react-native";
 
 import { Entypo } from "@expo/vector-icons";
@@ -100,7 +101,9 @@ function ListingsScreen({ navigation }) {
           <View style={styles.container}>
             {categories.map((categories) => (
               <View key={categories.value} style={styles.imageView}>
-                <Image source={categories.src} style={styles.image} />
+                <TouchableWithoutFeedback onPress={() => {}}>
+                  <Image source={categories.src} style={styles.image} />
+                </TouchableWithoutFeedback>
               </View>
             ))}
           </View>

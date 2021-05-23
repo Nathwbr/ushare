@@ -13,12 +13,15 @@ const AppStack = createStackNavigator();
 function App() {
   const [isLoading, LoadFinished] = useState(true);
   const [isLoggedIn, SetIsLoggedIn] = useState(false);
+  const [isTabBarShown, SetIsTabBarShown] = useState(true);
 
   const Parameters = {
     isLoading,
     LoadFinished,
     isLoggedIn,
     SetIsLoggedIn,
+    isTabBarShown,
+    SetIsTabBarShown,
   };
 
   return (

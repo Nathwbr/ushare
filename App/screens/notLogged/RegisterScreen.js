@@ -36,7 +36,7 @@ const validationSchema = Yup.object().shape({
   passwordConfirmation: Yup.string()
     .oneOf(
       [Yup.ref("password"), null],
-      "Les mots de passes ne correspondent pas"
+      "Les mots de passe ne correspondent pas"
     )
     .required("Confirmez votre mot de passe"),
   images: Yup.array().min(1, "Ajoutez une photo de profil"),

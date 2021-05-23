@@ -1,5 +1,15 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import {
+  View,
+  KeyboardAvoidingView,
+  TextInput,
+  StyleSheet,
+  Text,
+  Platform,
+  TouchableWithoutFeedback,
+  Button,
+  Keyboard,
+} from "react-native";
 import * as Yup from "yup";
 
 import {
@@ -67,51 +77,67 @@ const categories = [
 function ListingEditScreen({ navigation }) {
   const location = useLocation().location;
   return (
-    <Screen style={styles.container}>
-      <Form
-        initialValues={{
-          title: "",
-          price: "",
-          description: "",
-          category: null,
-          images: [],
-        }}
-        onSubmit={(values) => console.log(location)}
-        validationSchema={validationSchema}
-      >
-        <FormImagePickerList name="images" navigation={navigation} />
-        <FormField maxLength={255} name="title" placeholder="Titre" />
-        <FormField
-          keyboardType="numeric"
-          maxLength={8}
-          name="price"
-          placeholder="Prix"
-          width={120}
-        />
-        <Picker
-          items={categories}
-          name="category"
-          numberOfColumns={3}
-          PickerItemComponent={CategoryPickerItem}
-          placeholder="Catégorie"
-          width="50%"
-        />
-        <FormField
-          maxLength={255}
-          multiline
-          name="description"
-          numberOfLines={3}
-          placeholder="Description"
-        />
-        <SubmitButton title="Publier" />
-      </Form>
-    </Screen>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      style={styles.container}
+    >
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <View style={styles.inner}>
+          <Form
+            initialValues={{
+              title: "",
+              price: "",
+              description: "",
+              category: null,
+              images: [],
+            }}
+            onSubmit={(values) => console.log(location)}
+            validationSchema={validationSchema}
+          >
+            <FormImagePickerList name="images" navigation={navigation} />
+            <FormField maxLength={255} name="title" placeholder="Titre" />
+            <FormField
+              keyboardType="numeric"
+              maxLength={8}
+              name="price"
+              placeholder="Prix"
+              width={120}
+            />
+            <Picker
+              items={categories}
+              name="category"
+              numberOfColumns={3}
+              PickerItemComponent={CategoryPickerItem}
+              placeholder="Catégorie"
+              width="50%"
+            />
+            <FormField
+              maxLength={255}
+              multiline
+              name="description"
+              numberOfLines={3}
+              placeholder="Description"
+            />
+            <SubmitButton title="Publier" />
+          </Form>
+        </View>
+      </TouchableWithoutFeedback>
+    </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
+    flex: 1,
+  },
+  inner: {
+    padding: 24,
+    flex: 1,
+  },
+  header: {
+    fontSize: 36,
+    marginBottom: 48,
   },
 });
+
 export default ListingEditScreen;
