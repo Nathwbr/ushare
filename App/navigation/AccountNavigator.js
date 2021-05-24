@@ -1,7 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import AccountScreen from "../screens/logged/AccountScreen";
-import MessagesScreen from "../screens/logged/MessagesScreen";
 import colors from "../config/colors";
 
 import routes from "./routes";

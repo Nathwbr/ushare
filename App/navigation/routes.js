@@ -12,5 +12,7 @@ export default Object.freeze({
   MYLISTINGS: "Mes repas",
   MYPROFILE: "Mon profil",
   MYSETTINGS: "Réglages",
+  MYSEARCH: "Recherche",
+  MYLOCATION: "Localisation",
   REGISTER: "S'inscrire",
 });

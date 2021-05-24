@@ -7,6 +7,7 @@ import {
   Image,
   ScrollView,
   TouchableWithoutFeedback,
+  TouchableHighlight,
 } from "react-native";
 
 import { Entypo } from "@expo/vector-icons";
@@ -16,6 +17,7 @@ import Screen from "../../components/Screen";
 
 import colors from "../../config/colors";
 import routes from "../../navigation/routes";
+import MyLocalisationScreen from "./MyLocalisationScreen";
 
 const listings = [
   {
@@ -81,19 +83,25 @@ function ListingsScreen({ navigation }) {
   return (
     <>
       <View style={styles.header}>
-        <View style={styles.location}>
-          <Entypo name="location-pin" size={40} color="black" />
-          <Text style={{ fontSize: 15, fontWeight: "bold" }}>
-            Votre localisation
-          </Text>
-        </View>
-        <View style={styles.balance}>
-          <Image
-            source={require("../../assets/images/ucoin.png")}
-            style={styles.ucoin}
-          />
-          <Text style={{ fontSize: 20, fontWeight: "bold" }}>100</Text>
-        </View>
+        <TouchableWithoutFeedback
+          onPress={navigation.navigate(routes.MYLOCATION)}
+        >
+          <View style={styles.location}>
+            <Entypo name="location-pin" size={40} color="black" />
+            <Text style={{ fontSize: 15, fontWeight: "bold" }}>
+              Votre localisation
+            </Text>
+          </View>
+        </TouchableWithoutFeedback>
+        <TouchableWithoutFeedback>
+          <View style={styles.balance}>
+            <Image
+              source={require("../../assets/images/ucoin.png")}
+              style={styles.ucoin}
+            />
+            <Text style={{ fontSize: 20, fontWeight: "bold" }}>100</Text>
+          </View>
+        </TouchableWithoutFeedback>
       </View>
 
       <View>
@@ -101,9 +109,15 @@ function ListingsScreen({ navigation }) {
           <View style={styles.container}>
             {categories.map((categories) => (
               <View key={categories.value} style={styles.imageView}>
-                <TouchableWithoutFeedback onPress={() => {}}>
+                <TouchableHighlight
+                  style={[
+                    styles.profileImgContainer,
+                    { borderColor: "black", borderWidth: 2 },
+                  ]}
+                  onPress={() => {}}
+                >
                   <Image source={categories.src} style={styles.image} />
-                </TouchableWithoutFeedback>
+                </TouchableHighlight>
               </View>
             ))}
           </View>
@@ -129,8 +143,9 @@ function ListingsScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    backgroundColor: colors.light,
-    height: 75,
+    backgroundColor: "white",
+    alignItems: "center",
+    height: 95,
   },
   header: {
     backgroundColor: colors.primary,
@@ -158,12 +173,20 @@ const styles = StyleSheet.create({
     height: 50,
   },
   imageView: {
-    width: 75,
-    height: 75,
+    width: 80,
+    height: 80,
+    marginHorizontal: 5,
   },
   image: {
-    width: 75,
-    height: 75,
+    width: 70,
+    height: 70,
+  },
+  profileImgContainer: {
+    height: 80,
+    width: 80,
+    borderRadius: 40,
+    alignItems: "center",
+    justifyContent: "center",
   },
   screen: {
     padding: 7,

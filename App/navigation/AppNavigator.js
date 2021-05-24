@@ -8,7 +8,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import AccountNavigator from "./AccountNavigator";
 import FeedNavigator from "./FeedNavigator";
-import SearchScreen from "../screens/logged/SearchScreen";
+import SearchNavigator from "../navigation/SearchNavigator";
 import MessagesScreen from "../screens/logged/MessagesScreen";
 import PublishNavigator from "./PublishNavigator";
 import NewListingButton from "./NewListingButton";
@@ -59,9 +59,9 @@ export const AppNavigator = () => {
   }
 
   useEffect(() => {
-    if (Platform.OS !== "android") {
-      return;
-    }
+    // if (Platform.OS !== "android") {
+    //   return;
+    // }
     const keyboardDidShowListener = Keyboard.addListener(
       "keyboardDidShow",
       TheContext.SetIsTabBarShown(false)
@@ -74,7 +74,8 @@ export const AppNavigator = () => {
       keyboardDidShowListener.remove();
       keyboardDidHideListener.remove();
     };
-  }, []);
+  });
+  //}, []);
 
   return (
     <Tab.Navigator
@@ -99,7 +100,7 @@ export const AppNavigator = () => {
 
       <Tab.Screen
         name="Rechercher"
-        component={SearchScreen}
+        component={SearchNavigator}
         options={{
           tabBarIcon: ({ color, size }) => (
             <FontAwesome name="search" color={color} size={size} />

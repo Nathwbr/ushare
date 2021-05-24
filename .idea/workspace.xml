@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/App/navigation/SearchNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/screens/logged/MyLocalisationScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/navigation/AccountNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AccountNavigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AppNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/navigation/FeedNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/FeedNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/navigation/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/BalanceScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/MyBalanceScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/MyBalanceScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/SearchScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/SearchScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +73,19 @@
       <recent name="C:\Users\Nathan\ushare\app\screens\logged" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -102,7 +126,7 @@
       <workItem from="1621452674705" duration="10067000" />
       <workItem from="1621498746835" duration="11246000" />
       <workItem from="1621519390946" duration="380000" />
-      <workItem from="1621776715625" duration="10545000" />
+      <workItem from="1621776715625" duration="20541000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -349,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621784627986</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque le clavier est ouvert">
+      <created>1621801998344</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1621801998344</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +447,8 @@
     <MESSAGE value="Improving RegistrationSuccesfulScreen.js" />
     <MESSAGE value="Ajout de KeyboardAvoidingView" />
     <MESSAGE value="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque CaméraScreen est ouvert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque CaméraScreen est ouvert" />
+    <MESSAGE value="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque le clavier est ouvert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque le clavier est ouvert" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

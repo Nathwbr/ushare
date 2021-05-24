@@ -1,16 +1,12 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet } from "react-native";
 
-function MyListingsScreen(props) {
-  return (
-    <View style={styles.container}>
-      <Text>Ceci est MyBalanceScreen</Text>
-    </View>
-  );
+function MyBalanceScreen(props) {
+  return <View style={styles.container}></View>;
 }
 
 const styles = StyleSheet.create({
   container: {},
 });
 
-export default MyListingsScreen;
+export default MyBalanceScreen;
