@@ -84,9 +84,9 @@ function ListingsScreen({ navigation }) {
     <>
       <View style={styles.header}>
         <TouchableWithoutFeedback
-        // onPress={navigation.navigate("Accueil", {
-        //   screen: routes.MYLOCATION,
-        // })}
+          onPress={() => {
+            navigation.navigate(routes.MYLOCATION);
+          }}
         >
           <View style={styles.location}>
             <Entypo name="location-pin" size={40} color="black" />

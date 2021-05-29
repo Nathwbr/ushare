@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AppNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,7 @@
       <workItem from="1621519390946" duration="380000" />
       <workItem from="1621776715625" duration="20623000" />
       <workItem from="1622212350690" duration="5447000" />
-      <workItem from="1622299479910" duration="5066000" />
+      <workItem from="1622299479910" duration="5768000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -391,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622303824014</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="testing">
+      <created>1622304664104</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1622304664104</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
