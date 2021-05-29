@@ -4,6 +4,8 @@ import { Camera } from "expo-camera";
 import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 import * as ImagePicker from "expo-image-picker";
 
+import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
+
 import AppContext from "../../components/AppContext";
 
 export const CameraScreen = ({ navigation, route }) => {
