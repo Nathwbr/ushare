@@ -23,4 +23,6 @@ expo install react-native-gesture-handler react-native-reanimated react-native-s
 npm install @react-navigation/stack
 npm install @react-navigation/bottom-tabs
 npm install react-native-elements
-
+npm install reanimated-bottom-sheet
+npm i react-native-paper
+npm i react-native-share

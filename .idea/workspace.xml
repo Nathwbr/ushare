@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/App/navigation/SearchNavigator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/screens/logged/MyLocalisationScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/components/BisContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/screens/logged/EditProfileScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/navigation/AccountNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AccountNavigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AppNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/navigation/FeedNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/FeedNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/navigation/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/logged/BalanceScreen.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/logged/MyBalanceScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/MyBalanceScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/screens/logged/SearchScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/SearchScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/MyProfileScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/MyProfileScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -126,7 +121,9 @@
       <workItem from="1621452674705" duration="10067000" />
       <workItem from="1621498746835" duration="11246000" />
       <workItem from="1621519390946" duration="380000" />
-      <workItem from="1621776715625" duration="20541000" />
+      <workItem from="1621776715625" duration="20623000" />
+      <workItem from="1622212350690" duration="5447000" />
+      <workItem from="1622299479910" duration="3189000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -380,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621801998344</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Amélioration des de la Scrollist Icon des catégories et Création de la navigation pour Ma localisation et Ma balance">
+      <created>1621816239768</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1621816239768</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +452,8 @@
     <MESSAGE value="Ajout de KeyboardAvoidingView" />
     <MESSAGE value="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque CaméraScreen est ouvert" />
     <MESSAGE value="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque le clavier est ouvert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque le clavier est ouvert" />
+    <MESSAGE value="Amélioration des de la Scrollist Icon des catégories et Création de la navigation pour Ma localisation et Ma balance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amélioration des de la Scrollist Icon des catégories et Création de la navigation pour Ma localisation et Ma balance" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

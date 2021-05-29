@@ -1,7 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
-import { Keyboard } from "react-native";
+import BisContext from "./../components/BisContext";
+import { useKeyboard } from "@react-native-community/hooks";
 
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -22,60 +23,8 @@ const Tab = createBottomTabNavigator();
 
 export const AppNavigator = () => {
   const TheContext = useContext(AppContext);
-  let PublishTabOptions = ({ navigation, route }) => ({
-    tabBarVisible: ((route) => {
-      const routeName = getFocusedRouteNameFromRoute(route) ?? "";
-
-      if (routeName === "CameraScreen") {
-        return false;
-      }
-
-      return true;
-    })(route),
-  });
-
-  if (TheContext.isTabBarShown === true) {
-    PublishTabOptions = ({ navigation, route }) => ({
-      tabBarButton: ({ color, size }) => (
-        <NewListingButton
-          onPress={() => navigation.navigate(routes.LISTING_EDIT)}
-          color={colors.white}
-          size={45}
-        />
-      ),
-      tabBarIcon: ({ color, size }) => (
-        <MaterialCommunityIcons name="plus-circle" color={color} size={size} />
-      ),
-      tabBarVisible: ((route) => {
-        const routeName = getFocusedRouteNameFromRoute(route) ?? "";
-
-        if (routeName === "CameraScreen") {
-          return false;
-        }
-
-        return true;
-      })(route),
-    });
-  }
-
-  useEffect(() => {
-    // if (Platform.OS !== "android") {
-    //   return;
-    // }
-    const keyboardDidShowListener = Keyboard.addListener(
-      "keyboardDidShow",
-      TheContext.SetIsTabBarShown(false)
-    );
-    const keyboardDidHideListener = Keyboard.addListener(
-      "keyboardDidHide",
-      TheContext.SetIsTabBarShown(true)
-    );
-    return () => {
-      keyboardDidShowListener.remove();
-      keyboardDidHideListener.remove();
-    };
-  });
-  //}, []);
+  //const BisContext = useContext(BisContext);
+  const keyboard = useKeyboard();
 
   return (
     <Tab.Navigator
@@ -84,6 +33,7 @@ export const AppNavigator = () => {
         inactiveTintColor: colors.white,
         keyboardHidesTabBar: true,
         style: {
+          bottom: keyboard.keyboardShown ? -100 : 0,
           backgroundColor: colors.primary,
         },
       }}
@@ -111,7 +61,23 @@ export const AppNavigator = () => {
       <Tab.Screen
         name="Poster"
         component={PublishNavigator}
-        options={PublishTabOptions}
+        options={({ navigation, route }) => ({
+          tabBarButton: ({ color, size }) => (
+            <NewListingButton
+              onPress={() => navigation.navigate(routes.LISTING_EDIT)}
+              color={colors.white}
+              size={45}
+            />
+          ),
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons
+              name="plus-circle"
+              color={color}
+              size={size}
+            />
+          ),
+          tabBarVisible: true,
+        })}
       />
 
       <Tab.Screen
