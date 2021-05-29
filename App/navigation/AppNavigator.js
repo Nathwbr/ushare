@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
+import React, { useState } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
 import { useKeyboard } from "@react-native-community/hooks";
 
-import { FontAwesome } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { FontAwesome, MaterialCommunityIcons } from "@expo/vector-icons";
 
 import AccountNavigator from "./AccountNavigator";
 import FeedNavigator from "./FeedNavigator";
@@ -19,7 +18,19 @@ import colors from "../config/colors";
 const Tab = createBottomTabNavigator();
 
 export const AppNavigator = () => {
+  function test(route) {
+    const routeName = getFocusedRouteNameFromRoute(route) ?? "";
+
+    if (routeName === "CameraScreen") {
+      SetIsButtonShown(true);
+      return false;
+    }
+    SetIsButtonShown(false);
+    return true;
+  }
+
   const keyboard = useKeyboard();
+  const [isButtonShown, SetIsButtonShown] = useState(true);
   let PublishTabOptions = ({ navigation, route }) => ({
     tabBarButton: ({ color, size }) => (
       <NewListingButton
@@ -31,15 +42,7 @@ export const AppNavigator = () => {
     tabBarIcon: ({ color, size }) => (
       <MaterialCommunityIcons name="plus-circle" color={color} size={size} />
     ),
-    tabBarVisible: ((route) => {
-      const routeName = getFocusedRouteNameFromRoute(route) ?? "";
-
-      if (routeName === "CameraScreen") {
-        return false;
-      }
-
-      return true;
-    })(route),
+    tabBarVisible: test(route),
   });
 
   return (
@@ -49,7 +52,7 @@ export const AppNavigator = () => {
         inactiveTintColor: colors.white,
         keyboardHidesTabBar: true,
         style: {
-          bottom: keyboard.keyboardShown ? -100 : 0,
+          bottom: keyboard.keyboardShown || isButtonShown ? -100 : 0,
           backgroundColor: colors.primary,
         },
       }}
