@@ -66,7 +66,7 @@ function AccountScreen({ navigation }) {
         <View style={{ flexDirection: "row", marginTop: 15 }}>
           <AvatarInput
             avatarUri={avatarUri}
-            onChangeAvatar={(avatarUri) => handleAdd(avatarUri)}
+            onChangeImage={(avatarUri) => handleAdd(avatarUri)}
             navigation={navigation}
           />
 

@@ -3,14 +3,14 @@ import { View, StyleSheet, TouchableWithoutFeedback } from "react-native";
 import { Avatar } from "react-native-paper";
 import colors from "../config/colors";
 
-function AvatarInput({ navigation, avatarUri, onChangeAvatar }) {
+function AvatarInput({ navigation, avatarUri, onChangeImage }) {
   const handlePress = () => {
     selectAvatar();
   };
 
   const selectAvatar = () => {
     console.log(navigation);
-    navigation.navigate("CameraScreen", { onChangeImage: onChangeAvatar });
+    navigation.navigate("CameraScreen", { onChangeImage });
     //Récupérer photo
     // onChangeImage(photo.uri);
   };

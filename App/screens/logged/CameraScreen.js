@@ -11,13 +11,13 @@ import AppContext from "../../components/AppContext";
 export const CameraScreen = ({ navigation, route }) => {
   const cameraRef = useRef();
   const [type, setType] = useState(Camera.Constants.Type.back);
-  const TheContext = useContext(AppContext);
-  TheContext.SetIsTabBarShown(false);
+  //const TheContext = useContext(AppContext);
+  // TheContext.SetIsTabBarShown(false);
   const snap = async () => {
     if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync();
       route.params.onChangeImage(photo.uri);
-      TheContext.SetIsTabBarShown(true);
+      // TheContext.SetIsTabBarShown(true);
       navigation.goBack();
     }
   };
