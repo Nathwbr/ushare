@@ -106,27 +106,28 @@ function ListingsScreen({ navigation }) {
         </TouchableWithoutFeedback>
       </View>
 
-      <View>
-        <ScrollView horizontal>
-          <View style={styles.container}>
-            {categories.map((categories) => (
-              <View key={categories.value} style={styles.imageView}>
-                <TouchableHighlight
-                  style={[
-                    styles.profileImgContainer,
-                    { borderColor: "black", borderWidth: 2 },
-                  ]}
-                  onPress={() => {}}
-                >
-                  <Image source={categories.src} style={styles.image} />
-                </TouchableHighlight>
-              </View>
-            ))}
-          </View>
-        </ScrollView>
-      </View>
-
       <FlatList
+        ListHeaderComponent={
+          <View>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+              <View style={styles.container}>
+                {categories.map((categories) => (
+                  <View key={categories.value} style={styles.imageView}>
+                    <TouchableHighlight
+                      style={[
+                        styles.profileImgContainer,
+                        { borderColor: "black", borderWidth: 2 },
+                      ]}
+                      onPress={() => {}}
+                    >
+                      <Image source={categories.src} style={styles.image} />
+                    </TouchableHighlight>
+                  </View>
+                ))}
+              </View>
+            </ScrollView>
+          </View>
+        }
         data={listings}
         keyExtractor={(listing) => listing.id.toString()}
         renderItem={({ item }) => (

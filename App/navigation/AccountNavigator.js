@@ -8,7 +8,7 @@ import MyListingsScreen from "../screens/logged/MyListingsScreen";
 import MyBalanceScreen from "../screens/logged/MyBalanceScreen";
 import MyHistoryScreen from "../screens/logged/MyHistoryScreen";
 import MySettingsScreen from "../screens/logged/MySettingsScreen";
-import MyProfileScreen from "../screens/logged/MyProfileScreen";
+import CameraScreen from "../screens/logged/CameraScreen";
 
 const Stack = createStackNavigator();
 
@@ -69,12 +69,13 @@ const AccountNavigator = () => (
       }}
     />
     <Stack.Screen
-      name={routes.MYPROFILE}
-      component={MyProfileScreen}
+      name={"CameraScreen"}
+      component={CameraScreen}
       options={{
         headerTintColor: "white",
         headerStyle: { backgroundColor: colors.primary },
         headerTitleAlign: "center",
+        headerTitle: "Caméra",
       }}
     />
   </Stack.Navigator>

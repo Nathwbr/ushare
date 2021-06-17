@@ -17,9 +17,7 @@ export const CameraScreen = ({ navigation, route }) => {
     if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync();
       route.params.onChangeImage(photo.uri);
-      console.log(TheContext.IsTabBarShown);
       TheContext.SetIsTabBarShown(true);
-      console.log(TheContext.IsTabBarShown);
       navigation.goBack();
     }
   };

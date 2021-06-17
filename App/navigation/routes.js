@@ -1,6 +1,7 @@
 export default Object.freeze({
   APP: "App",
   AUTH: "Auth",
+  CAMERA: "Caméra",
   LISTING: "Accueil",
   LISTING_DETAILS: "Ce repas",
   LISTING_EDIT: "Poster",

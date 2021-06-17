@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="">
+    <list default="true" id="64d1724f-6298-4684-859e-275044b30f11" name="Default Changelist" comment="FIx bug locationscreen">
+      <change afterPath="$PROJECT_DIR$/App/components/AvatarInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/navigation/AccountNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/AccountNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/navigation/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/navigation/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/AccountScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/AccountScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/CameraScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/CameraScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/ListingEditScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingEditScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/logged/ListingsScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/logged/MyProfileScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/screens/notLogged/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/screens/notLogged/RegisterScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +36,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1rIX0JBAvAmUOAL2EZUd5TbLLxs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -62,13 +74,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,6 +131,11 @@
       <workItem from="1621776715625" duration="20623000" />
       <workItem from="1622212350690" duration="5447000" />
       <workItem from="1622299479910" duration="5768000" />
+      <workItem from="1622305348528" duration="53000" />
+      <workItem from="1623504174694" duration="138000" />
+      <workItem from="1623504327817" duration="2566000" />
+      <workItem from="1623760192245" duration="3983000" />
+      <workItem from="1623938528200" duration="3993000" />
     </task>
     <task id="LOCAL-00001" summary="New start">
       <created>1618666244426</created>
@@ -398,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622304664104</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="FIx bug locationscreen">
+      <created>1622305388106</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1622305388106</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +469,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Huge improvements" />
     <MESSAGE value="Insane improvements" />
     <MESSAGE value="New start" />
     <MESSAGE value="new start" />
@@ -468,7 +493,8 @@
     <MESSAGE value="Ajout de la fonctionnalité qui permet de cacher l'icon &quot;poster&quot; lorsque le clavier est ouvert" />
     <MESSAGE value="Amélioration des de la Scrollist Icon des catégories et Création de la navigation pour Ma localisation et Ma balance" />
     <MESSAGE value="testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing" />
+    <MESSAGE value="FIx bug locationscreen" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIx bug locationscreen" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -2,12 +2,9 @@ import React from "react";
 import {
   View,
   KeyboardAvoidingView,
-  TextInput,
   StyleSheet,
-  Text,
   Platform,
   TouchableWithoutFeedback,
-  Button,
   Keyboard,
 } from "react-native";
 import * as Yup from "yup";
@@ -20,7 +17,6 @@ import {
 } from "../../components/forms";
 import FormImagePickerList from "../../components/forms/FormImagePickerList";
 import CategoryPickerItem from "../../components/CategoryPickerItem";
-import Screen from "../../components/Screen";
 import useLocation from "../../hooks/useLocation";
 
 const validationSchema = Yup.object().shape({
